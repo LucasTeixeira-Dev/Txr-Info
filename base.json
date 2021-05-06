@@ -1,0 +1,49 @@
+{
+	"Connection" : {
+		"Headers" : {
+			"Content-type" : "application/json; charset=UTF-8",
+			"Access-Control-Allow-Origin" : "http://localhost/",
+			"Access-Control-Allow-Methods" : "GET, PUT, POST, DELETE"
+		}
+	},
+	"Database" : {
+		"host" : "localhost",
+		"port" : "3306",
+		"dbname" : "infoBD",
+		"user" : "root",
+		"password" : ""
+	},
+	"Class" : [
+		{
+			"name" : "servico",
+			"attributes" : [
+				"id_servico",
+				"nome",
+				"descricao_s",
+				"valor"
+			]
+		},
+		{
+			"name" : "produto",
+			"attributes" : [
+				"id_produto",
+				"nome",
+				"descricao_p",
+				"valor"
+			]
+		},
+		{
+			"name" : "pedido",
+			"attributes" : [
+				"id_pedido",
+				"id_servico",
+				"id_produto",
+				"descricao_pedido",
+				"data",
+				"hora",
+				"status",
+				"valor"
+			]
+		}
+	]
+}
